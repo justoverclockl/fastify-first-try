@@ -5,7 +5,7 @@ const app = fastify({
     caseSensitive: false //case sensitivity routes
 })
 
-// decorators are utils that can be used to execute code without repeating any login
+// decorators are utils that can be used to execute code without repeating any logic
 // here you can put an object, a string, a value...
 app.decorate('repeat', (string, times) => {
     return string.repeat(times)
